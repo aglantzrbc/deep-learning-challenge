@@ -17,10 +17,13 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 21
 
 ## 1. Overview:
 
- - **Overview:**
-  - The _purpose_ of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54017?module_item_id=962033) is to create a tool for the nonprofit foundation Alphabet Soup that can help it select the applicants for funding with the best chance of success in their ventures.
-  - The _data source_ is an .csv file compiled by Alphabet Soup’s business team containing more than 34,000 organizations that have received funding from Alphabet Soup over the years.
-  - The _instrumentality_ is machine learning and neural networks, which are employed to contruct a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup, thereby achieving the organization's goal.
+ - The _purpose_ of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54017?module_item_id=962033) is to create a tool for the nonprofit foundation Alphabet Soup that can help it select the applicants for funding with the best chance of success in their ventures.
+ - The _data source_ is an .csv file compiled by Alphabet Soup’s business team containing more than 34,000 organizations that have received funding from Alphabet Soup over the years.
+ - The _instrumentality_ is machine learning and neural networks, which are employed to contruct a binary classifier that can predict whether applicants will be successful if funded by Alphabet Soup, thereby achieving the organization's goal.
+ - The business team's file contains the following metadata, each with a definition:
+
+![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/5ef4e180-6606-4ba9-b999-c3d343d8e359)
+
 
 * The purpose of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54015?module_item_id=961978) was to build a model that can identify the creditworthiness of borrowers based on historical lending activity data for a [peer-to-peer lending](https://www.investopedia.com/terms/p/peer-to-peer-lending.asp#:~:text=Peer%2Dto%2Dpeer%20(P2P)%20lending%20is%20a%20form,terms%20and%20enables%20the%20transactions.) services company. [Supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) techniques were used to accomplish this goal.
 * The financial data included these fields: `loan_size`, `interest_rate`,	`borrower_income`, `debt_to_income`,	`num_of_accounts`,	`derogatory_marks`, `total_debt`, and `loan_status`. It's assumed that the first seven datapoints are the basis for generating the `loan_score` value, which determines the overall disposition of the particular loan. For this analysis, the first seven fields were therefore collectively employed as an [independent variable](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) to predict the eighth field, `loan_status`, the dependent variable.
