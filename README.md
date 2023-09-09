@@ -10,9 +10,9 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 21
   -  Overview
   -  Results
   -  Summary
-4. Contributing
-5. Acknowledgements
-6. Licenses
+2. Contributing
+3. Acknowledgements
+4. Licenses
 
 ## 1. Overview of the Analysis:
 
