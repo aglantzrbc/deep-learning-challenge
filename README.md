@@ -69,6 +69,8 @@ In addition to using the resources listed above, the author acquired query respo
 
 The author also consulted code and results from similar projects publicly accessible in [GitHub](https://github.com/) repositories and recoverable through [Google](https://www.google.com/) and comparable search engines:
 
+- [Absughe, Khadra](mailto:k.absughe@gmail.com): United Kingdom, September 2022. [deep-learning-challenge](https://github.com/khadra1/deep-learning-challenge)
+- [Janer, Jordan](https://www.linkedin.com/in/jordan-janer/): Los Angeles, California, USA, April 2022. [deep-learning-challenge](https://github.com/JordanJaner/deep_learning_challenge)
 - [Mathues, Kasey](https://www.linkedin.com/in/kaseymathues/): Philadelphia, Pennsylvania, USA, January 2023. [deep-learning-challenge](https://github.com/kclm40/deep-learning-challenge)
 - [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, March 2023. [deep-learning-challenge](https://github.com/JeremyTallant/deep-learning-challenge)
 
