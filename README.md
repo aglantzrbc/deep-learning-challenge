@@ -4,7 +4,7 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 21
 
 [Deep Learning Challenge](https://bootcampspot.instructure.com/courses/3337/assignments/54017?module_item_id=962033)
 
-# Application Screening Tool for Alphabet Soup
+## Application Screening Tool for Alphabet Soup
 
 ## TABLE OF CONTENTS
 
