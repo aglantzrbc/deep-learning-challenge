@@ -59,19 +59,18 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 21
   -  **Use validation techniques such as cross-validation** to assess the model's performance on different subsets of the data and see if the rosy performance survives the change.
   -  **Employ different random states besides "1" with the _RandomOverSampler_ function** to assess whether the model's performance remains consistent across multiple random samples.
 
-## 4. Contributing:
+## 2. Contributing:
 
 - [Glantz, Adam](https://www.linkedin.com/in/adam-glantz/): Annapolis, Maryland, USA, September 2023, email: adamglantz@yahoo.com
 
-## 5. Acknowledgements:
+## 3. Acknowledgements:
 
 In addition to using the resources listed above, the author acquired query responses in OpenAI's [ChatGPT](https://chat.openai.com/) versions 3.5 and 4 apps, and the [VSCode GitHub Copilot](https://github.com/features/copilot) app V1.
 
 The author also consulted code and results from similar projects publicly accessible in [GitHub](https://github.com/) repositories and recoverable through [Google](https://www.google.com/) and comparable search engines:
 
-- [Ates, Ilkay](https://www.linkedin.com/in/ilkay-ates/): Fullerton, California, USA, March 2023. [Credit_Risk_Classification](https://github.com/IlkayAtes11/Credit_Risk_Classification)
-- [Inhapim, Camilla](https://www.linkedin.com/in/camillainhapim/): Atlanta, Georgia, USA, June 2023. [credit-risk-classification](https://github.com/cami5326/credit-risk-classification)
+- [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, March 2023. [deep-learning-challenge](https://github.com/JeremyTallant/deep-learning-challenge)
 
-## 6. Licenses:
+## 4. Licenses:
 
 - This program is allowed for free use via the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license
