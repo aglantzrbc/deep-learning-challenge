@@ -2,19 +2,23 @@
 
 Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 21
 
-# [Deep Learning Challenge](https://bootcampspot.instructure.com/courses/3337/assignments/54017?module_item_id=962033)
+[Deep Learning Challenge](https://bootcampspot.instructure.com/courses/3337/assignments/54017?module_item_id=962033)
+
+# Application Screening Tool for Alphabet Soup
 
 ## TABLE OF CONTENTS
 
-1. Application Screening Tool for Alphabet Soup
-  -  Overview
-  -  Results
-  -  Summary
-2. Contributing
-3. Acknowledgements
-4. Licenses
+1. Overview
+2. Results
+3. Summary
+4. Contributing
+5. Acknowledgements
+6. Licenses
 
 ## 1. Application Screening Tool for Alphabet Soup:
+
+ - **Overview:**
+  - The purpose of the 
 
 * The purpose of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54015?module_item_id=961978) was to build a model that can identify the creditworthiness of borrowers based on historical lending activity data for a [peer-to-peer lending](https://www.investopedia.com/terms/p/peer-to-peer-lending.asp#:~:text=Peer%2Dto%2Dpeer%20(P2P)%20lending%20is%20a%20form,terms%20and%20enables%20the%20transactions.) services company. [Supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) techniques were used to accomplish this goal.
 * The financial data included these fields: `loan_size`, `interest_rate`,	`borrower_income`, `debt_to_income`,	`num_of_accounts`,	`derogatory_marks`, `total_debt`, and `loan_status`. It's assumed that the first seven datapoints are the basis for generating the `loan_score` value, which determines the overall disposition of the particular loan. For this analysis, the first seven fields were therefore collectively employed as an [independent variable](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) to predict the eighth field, `loan_status`, the dependent variable.
@@ -34,8 +38,6 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 21
 * The analysis used the following two methods:
   -  In the first iteration, the data was used as-is, even though there was a large imbalance in volume between values of the dependent variable. _train_test_split_ was used to divide the data into training and testing batches, the _LogisticRegression_ module created a predictive model, the training data was fitted to it, and predictions were made on the testing data.
   -  In the second round, the data was artificially resampled using the _RandomOverSampler_ function, so that both possible values of `y` have the same volume. As before, the _LogisticRegression_ module created a predictive model, the resampled training data was fitted to it, and new predictions were made on the testing data.
-
- - **Overview:**
 
 * **Key performance indicators definitions:**
   - **Accuracy:** This is the proportion of the total number of predictions that were correct. It is calculated as (True Positives + True Negatives) / Total Observations. If the dataset is imbalanced, it's better to use a **balanced accuracy** score, which is calculated as the arithmetic mean of sensitivity (a.k.a., recall - the true positive rate) and specificity (true negative rate), effectively taking both classes into account in a balanced manner. Balanced accuracy compensates for bias in favor of the majority class by giving equal weight to each class's sensitivity.
@@ -59,11 +61,11 @@ Glantz Adam Bootcamp RUT-VIRT-DATA-PT-04-2023-U-LOLC-MWTH - Module 21
   -  **Use validation techniques such as cross-validation** to assess the model's performance on different subsets of the data and see if the rosy performance survives the change.
   -  **Employ different random states besides "1" with the _RandomOverSampler_ function** to assess whether the model's performance remains consistent across multiple random samples.
 
-## 2. Contributing:
+## 4. Contributing:
 
 - [Glantz, Adam](https://www.linkedin.com/in/adam-glantz/): Annapolis, Maryland, USA, September 2023, email: adamglantz@yahoo.com
 
-## 3. Acknowledgements:
+## 5. Acknowledgements:
 
 In addition to using the resources listed above, the author acquired query responses in OpenAI's [ChatGPT](https://chat.openai.com/) versions 3.5 and 4 apps, and the [VSCode GitHub Copilot](https://github.com/features/copilot) app V1.
 
@@ -74,6 +76,6 @@ The author also consulted code and results from similar projects publicly access
 - [Mathues, Kasey](https://www.linkedin.com/in/kaseymathues/): Philadelphia, Pennsylvania, USA, January 2023. [deep-learning-challenge](https://github.com/kclm40/deep-learning-challenge)
 - [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, March 2023. [deep-learning-challenge](https://github.com/JeremyTallant/deep-learning-challenge)
 
-## 4. Licenses:
+## 6. Licenses:
 
 - This program is allowed for free use via the [Creative Commons Zero v1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/) license
