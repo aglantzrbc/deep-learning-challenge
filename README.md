@@ -47,15 +47,19 @@ Variables that were removed include `EID` and `NAME`, because these strings appe
 
 * How many [neurons](https://en.wikipedia.org/wiki/Artificial_neuron), [layers](https://en.wikipedia.org/wiki/Layer_(deep_learning)), and [activation functions](https://en.wikipedia.org/wiki/Activation_function) did you select for your neural network model, and why?
 
-I was able to confine the model to two hidden layers and an output layer (See **Figure 2**). The hidden layers both used the [Rectified Linear Unit (ReLU)](https://builtin.com/machine-learning/relu-activation-function) activation function. Despite seeming simple, binary classification problems often involve complex, non-linear decision boundaries, perhaps like the subjective-sounding categories `USE_CASE` and `SPECIAL_CONSIDERATIONS`. ReLU introduces non-linearity to the model, enabling it to learn these non-linear relationships in the data. By contrast, my output layer used a [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) activation function, since its results are confined to values of 0 and 1, like the `IS_SUCCESSFUL` target variable. Finally, settling on the number of neurons was a trial and error process. I found that 80 neurons for the first hidden layer and 30 for the second worked well. The idea is that the earlier layers learn lower-level, more general features, while the later layers learn higher-level, more specific features. I therefore concentrated computational power with more neurons in the first layer, and then reduced the number in the second to capture the smaller number of high-level abstractions.
+I was able to confine the model to two hidden layers and an output layer (**Figure 2**). The hidden layers both used the [Rectified Linear Unit (ReLU)](https://builtin.com/machine-learning/relu-activation-function) activation function. Despite seeming simple, binary classification problems often involve complex, non-linear decision boundaries, perhaps like the subjective-sounding categories `USE_CASE` and `SPECIAL_CONSIDERATIONS`. ReLU introduces non-linearity to the model, enabling it to learn these non-linear relationships in the data. By contrast, my output layer used a [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) activation function, since its results are confined to values of 0 and 1, like the `IS_SUCCESSFUL` target variable. Finally, settling on the number of neurons was a trial and error process. I found that 80 neurons for the first hidden layer and 30 for the second worked well. The idea is that the earlier layers learn lower-level, more general features, while the later layers learn higher-level, more specific features. I therefore concentrated computational power with more neurons in the first layer, and then reduced the number in the second to capture the smaller number of high-level abstractions.
 
 ![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/1162a3b7-07f1-431d-b509-6f670f84da1b)
 
-**Figure 2** | *Allocation of neurons, layers, and activations functions in the model*
+**Figure 2** | *Allocation of neurons, layers, and activation functions in the model*
 
 * Were you able to achieve the target model performance?
 
-Yes, I was able to increase the accuracy of predictions on test data from 72.44% in my first attempt to 78.59% in my final (third) optimization. The final training result was 79.30%, only 0.71% higher than the final testing accuracy score, showing that overfitting was kept under control. As aformentioned, the benchmark for success is 75%, so this model could be of use to Alphabet Soup.
+Yes, I was able to increase the accuracy of predictions on test data from 72.44% in my first attempt to 78.59% in my final (third) optimization (**Figure 3**). The final training result was 79.30%, only 0.71% higher than the final testing accuracy score, showing that overfitting was kept under control. As aformentioned, the benchmark for success is 75%, so this model could be of use to Alphabet Soup.
+
+![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/a7c0efec-a850-4763-82a4-277a073f4127)
+
+**Figure 3** | *Accuracy scores for training and test data in last iteration of the model*
 
 * What steps did you take in your attempts to increase model performance?
 
