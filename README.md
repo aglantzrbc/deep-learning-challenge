@@ -9,9 +9,10 @@ Application Screening Tool for Alphabet Soup
 1. Overview
 2. Results
 3. Summary
-4. Contributing
-5. Acknowledgements
-6. Licenses
+4. Installation
+5. Contributing
+6. Acknowledgements
+7. Licenses
 
 ## 1. Overview:
 
@@ -72,6 +73,23 @@ The successful increase in accuracy was only achieved after imprecise trial-and-
 The results are surprising. The addition of the `NAME` variable makes a significant difference in accuracy. I would have thought that the only features with a bearing on `IS_SUCCESSFUL` are related to past behavior, sectoral position, and financial performance, with `NAME` merely an incidental string. That this is not the case raises several questions. First, do more efficient and financially responsible organizations use particular keywords in their names? Second, is there an inherent bias in the model that privileges particular names strings over others?  Investigating these lines of inquiry would require different [unsupervised machine learning](https://en.wikipedia.org/wiki/Unsupervised_learning) instrumentalities that are beyond the scope of this project.
 
 Overall, another way to approach this classification task would be to try a different type of model, such as a [Random Forest Classifier](https://en.wikipedia.org/wiki/Random_forest) or a [Support Vector Machine (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine). These models have been shown to be effective in binary classification problems and may be able to achieve a higher accuracy without the need for extensive optimization attempts. Additionally, they can handle both numerical and categorical variables and can handle outliers and imbalanced datasets well, which may be present in this dataset. Therefore, it may be worth exploring these alternative models as a potential solution to the classification problem. (Please see the _Acknowledgements_ section for the source of this paragraph.)
+
+## 3. Installation:
+
+- The [GitHub](https://github.com/aglantzrbc/leaflet-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
+- **Constituent program files and their locations:**
+  -  _HTML:_ **index.html** -- located at root level (run this file)
+  -  _CSS:_ **style.css** -- located in the _css_ subdirectory one level below the root level
+  -  _JAVASCRIPT_ (Mapbox API access token): **config.js** -- located at root level
+  -  _JAVASCRIPT_ (main JavaScript file): **logic.js** -- located in the _Leaflet-Part-1_2_ subdirectory one level below the root level
+- **If the relative placement of files, above, is altered, the code won't run.**
+- The program relies upon regular updates from the two source URLs at periodic intervals. At times, imperfections or interruptions in the connection may cause a reduction in functionality, such as the inability to toggle layers. **When this happens, it is recommended that the user refresh their browser.** _Please note that alerts in the platform console may occur, but do not necessarily mean function is impaired._
+  - Another way to deal with resource access issues is to spin up a local server using [cross-origin resource sharing (CORS)](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), such as through the [Git](https://git-scm.com/) command "python -m http.server", and run the code through a local port, ideally via a private or incognito browser window or tab. 
+- The program's Mapbox functionality is provided by an API access token individually supplied to the author. The terms of use may change over time or the token's utility may expire, causing the program to no longer function as intended. **If this happens, it is recommended that the user obtain their own access token from [Mapbox](https://www.mapbox.com/about/maps/) and update the _config.js_ file.** _Please see the bottom of this README document for access to terms of use for the Mapbox API and its major associated functionality source._
+- The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 15 Leaflet Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54007?module_item_id=961640) webpage.
+- The latest versions of the coding languages are [CSS3](https://en.wikipedia.org/wiki/CSS), [HTML5](https://en.wikipedia.org/wiki/HTML5), and [JavaScript ES13](https://en.wikipedia.org/wiki/JavaScript).
+- This project was created on a [PC](https://en.wikipedia.org/wiki/Personal_computer) using [Google Chrome](https://www.google.com/chrome/) for [Windows](https://www.microsoft.com/en-us/windows) version 115.0.5790.102 and its associated [Google DevTools](https://developer.chrome.com/docs/devtools/) extension. **If the program doesn't function, it is recommended that the user attempt running it on this platform and browser.**
+- Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle.
 
 ## 4. Contributing:
 
