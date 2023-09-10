@@ -58,7 +58,7 @@ I was able to confine the model to two hidden layers and an output layer (**Figu
 
 Yes, I was able to increase the accuracy of predictions on test data from 73.29% in my first attempt to 78.59% in my final (third) optimization (**Figure 3**). The final training result was 79.30%, only 0.71% higher than the final testing accuracy score, showing that overfitting was kept under control. As aforementioned, the benchmark for success is 75%, so this model could be of use to Alphabet Soup.
 
-![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/a7c0efec-a850-4763-82a4-277a073f4127)
+![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/fb302add-f1af-4ddb-b332-3138f1c73bc5)
 
 **Figure 3** | *Accuracy scores for training and test data in last iteration of the model*
 
