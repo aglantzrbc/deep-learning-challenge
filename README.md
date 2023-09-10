@@ -16,18 +16,22 @@ Application Screening Tool for Alphabet Soup
 ## 1. Overview:
 
  - The _purpose_ of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54017?module_item_id=962033) is to create a tool for the nonprofit foundation Alphabet Soup that can help it select the applicants for funding with the best chance of success in their ventures.
- - The _data source_ is an .csv file compiled by Alphabet Soup’s business team containing more than 34,000 organizations that have received funding from Alphabet Soup over the years.
- - The _instrumentality_ is [machine learning](https://en.wikipedia.org/wiki/Machine_learning) and [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), which are employed to contruct a [binary classifier](https://en.wikipedia.org/wiki/Binary_classification) that can predict whether applicants will be successful if funded by Alphabet Soup.
- - _Success_ is defined as creating a tool with a predictive power of 75% or more.
- - The business team's file contains the following metadata, each with a definition (**Figure 1**):
+ - The _data source_ is an .csv file compiled by Alphabet Soup’s business team containing information on more than 34,000 organizations that have received funding from Alphabet Soup over the years.
+ - The _instrumentalities_ are [machine learning](https://en.wikipedia.org/wiki/Machine_learning) and [neural networks](https://en.wikipedia.org/wiki/Artificial_neural_network), which are employed to contruct a [binary classifier](https://en.wikipedia.org/wiki/Binary_classification) that can predict whether applicants will be successful if funded by Alphabet Soup.
+ - _Success_ is defined as creating a tool with a predictive power of 75% or more: i.e., its predicitions are correct 75% of the time or more.
 
 ## 2. Results:
 
- - The business team's file contains the following metadata, each with a definition (**Figure 1**):
+The business team's file contains the following metadata, each with a definition (**Figure 1**):
 
 ![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/5ef4e180-6606-4ba9-b999-c3d343d8e359)
 
 **Figure 1** | *Variable metadata with definitions*
+
+* **Data Preprocessing**
+ - The _target_ (i.e., [dependent](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)) variable is `IS_SUCCESSFUL`, which contains the binary values `0` or `1`. As such, this task is one of classification.
+ - The _features_ (i.e., independent variables) are all the remaining variables excluding 'EID' (i.e., Employee Identification Number), discuss immediately below.
+ - Variables that were _removed_ include `EID` and `NAME`, because these strings don't appear to contibute to the calculation
 
 * The purpose of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54015?module_item_id=961978) was to build a model that can identify the creditworthiness of borrowers based on historical lending activity data for a [peer-to-peer lending](https://www.investopedia.com/terms/p/peer-to-peer-lending.asp#:~:text=Peer%2Dto%2Dpeer%20(P2P)%20lending%20is%20a%20form,terms%20and%20enables%20the%20transactions.) services company. [Supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) techniques were used to accomplish this goal.
 * The financial data included these fields: `loan_size`, `interest_rate`,	`borrower_income`, `debt_to_income`,	`num_of_accounts`,	`derogatory_marks`, `total_debt`, and `loan_status`. It's assumed that the first seven datapoints are the basis for generating the `loan_score` value, which determines the overall disposition of the particular loan. For this analysis, the first seven fields were therefore collectively employed as an [independent variable](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) to predict the eighth field, `loan_status`, the dependent variable.
