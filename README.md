@@ -30,9 +30,16 @@ The business team's file contains the following metadata, each with a definition
 
 **Data Preprocessing**
 
-* The **target** (i.e., [dependent](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)) variable is `IS_SUCCESSFUL`, which contains the binary values `0` or `1`. As such, this task is one of classification.
-* The **features** (i.e., independent variables) are all the remaining variables excluding 'EID' (i.e., Employee Identification Number), discuss immediately below.
-* **Variables that were removed** include `EID` and `NAME`, because these strings appear incidental to the performance and financial underpinnings of `IS_SUCCESSFUL`. _As I will demonstrate below, this is not the case_. `EID` is indeed expendable, but `NAME` is not.
+* What variable(s) are the target(s) for your model?
+The target (i.e., [dependent](https://en.wikipedia.org/wiki/Dependent_and_independent_variables)) variable is `IS_SUCCESSFUL`, which contains the binary values `0` or `1`. As such, this task is one of classification.
+* What variable(s) are the feature(s) for your model?
+The features (i.e., independent variables) are all the remaining variables excluding 'EID' (i.e., Employee Identification Number), discuss immediately below.
+* What variable(s) should be removed from the input data because they are neither targets nor features?
+Variables that were removed include `EID` and `NAME`, because these strings appear incidental to the performance and financial underpinnings of `IS_SUCCESSFUL`. _As I will demonstrate below, this is not the case_. `EID` is indeed expendable, but `NAME` is not.
+
+**Compiling, Training, and Evaluating the Model**
+
+* 
 
 * The purpose of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54015?module_item_id=961978) was to build a model that can identify the creditworthiness of borrowers based on historical lending activity data for a [peer-to-peer lending](https://www.investopedia.com/terms/p/peer-to-peer-lending.asp#:~:text=Peer%2Dto%2Dpeer%20(P2P)%20lending%20is%20a%20form,terms%20and%20enables%20the%20transactions.) services company. [Supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) techniques were used to accomplish this goal.
 * The financial data included these fields: `loan_size`, `interest_rate`,	`borrower_income`, `debt_to_income`,	`num_of_accounts`,	`derogatory_marks`, `total_debt`, and `loan_status`. It's assumed that the first seven datapoints are the basis for generating the `loan_score` value, which determines the overall disposition of the particular loan. For this analysis, the first seven fields were therefore collectively employed as an [independent variable](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) to predict the eighth field, `loan_status`, the dependent variable.
