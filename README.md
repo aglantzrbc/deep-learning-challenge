@@ -45,7 +45,7 @@ Variables that were removed include `EID` and `NAME`, because these strings appe
 
 **Compiling, Training, and Evaluating the Model**
 
-* How many neurons, layers, and activation functions did you select for your neural network model, and why?
+* How many [neurons](https://en.wikipedia.org/wiki/Artificial_neuron), [layers](https://en.wikipedia.org/wiki/Layer_(deep_learning)), and [activation functions](https://en.wikipedia.org/wiki/Activation_function) did you select for your neural network model, and why?
 
 I was able to confine the model to two hidden layers and an output layer (See **Figure 2**). The hidden layers both used the [Rectified Linear Unit (ReLU)](https://builtin.com/machine-learning/relu-activation-function) activation function. Despite seeming simple, binary classification problems often involve complex, non-linear decision boundaries, perhaps like the subjective-sounding categories `USE_CASE` and `SPECIAL_CONSIDERATIONS`. ReLU introduces non-linearity to the model, enabling it to learn these non-linear relationships in the data. By contrast, my output layer used a [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) activation function, since its results are confined to values of 0 and 1, like the `IS_SUCCESSFUL` target variable. Finally, settling on the number of neurons was a trial and error process. I found that 80 neurons for the first hidden layer and 30 for the second worked well. The idea is that the earlier layers learn lower-level, more general features, while the later layers learn higher-level, more specific features. I therefore concentrated computational power with more neurons in the first layer, and then reduced the number in the second to capture the smaller number of high-level abstractions.
 
