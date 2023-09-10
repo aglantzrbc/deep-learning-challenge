@@ -84,7 +84,7 @@ The author also consulted code and results from similar projects publicly access
 - [Mathues, Kasey](https://www.linkedin.com/in/kaseymathues/): Philadelphia, Pennsylvania, USA, January 2023. [deep-learning-challenge](https://github.com/kclm40/deep-learning-challenge)
 - [Tallant, Jeremy](https://www.linkedin.com/in/jeremy-tallant-717075220/): San Antonio, Texas, USA, March 2023. [deep-learning-challenge](https://github.com/JeremyTallant/deep-learning-challenge)
 
-**Note:** _Jeremy Tallant's summary for this project was quoted nearly verbatim in the last paragraph._
+**Note:** _Part of Jeremy Tallant's summary for this project was quoted nearly verbatim in the last paragraph of the_ Summary _section._
 
 ## 6. Licenses:
 
