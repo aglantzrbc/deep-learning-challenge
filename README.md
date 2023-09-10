@@ -74,7 +74,7 @@ After my original attempt, I tried to improve accuracy by correcting what I saw 
 
 **Figure 5** | _Example of increase in binning in Optimization attempt 1_*
 
-I then decided to bring more computational power to bear on the problem by creating a third hidden layer with 20 neurons. This also didn't work, as accuracy fell to 72.45%.
+I then decided to bring more computational power to bear on the problem by creating a third hidden layer with 20 neurons. This also didn't work, as accuracy fell to 72.45%. (**Figure 6**)
 
 ![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/321a5fcf-ff4d-4eda-bcb4-27c1f8264fe8)
 
