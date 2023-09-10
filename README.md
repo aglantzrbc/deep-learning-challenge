@@ -76,18 +76,12 @@ Overall, another way to approach this classification task would be to try a diff
 
 ## 3. Installation:
 
-- The [GitHub](https://github.com/aglantzrbc/leaflet-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
+- The [GitHub](https://github.com/aglantzrbc/deep-learning-challenge) repository (version 2.9.1) containing all project files is publicly accessible.
 - **Constituent program files and their locations:**
-  -  _HTML:_ **index.html** -- located at root level (run this file)
-  -  _CSS:_ **style.css** -- located in the _css_ subdirectory one level below the root level
-  -  _JAVASCRIPT_ (Mapbox API access token): **config.js** -- located at root level
-  -  _JAVASCRIPT_ (main JavaScript file): **logic.js** -- located in the _Leaflet-Part-1_2_ subdirectory one level below the root level
-- **If the relative placement of files, above, is altered, the code won't run.**
-- The program relies upon regular updates from the two source URLs at periodic intervals. At times, imperfections or interruptions in the connection may cause a reduction in functionality, such as the inability to toggle layers. **When this happens, it is recommended that the user refresh their browser.** _Please note that alerts in the platform console may occur, but do not necessarily mean function is impaired._
-  - Another way to deal with resource access issues is to spin up a local server using [cross-origin resource sharing (CORS)](https://en.wikipedia.org/wiki/Cross-origin_resource_sharing), such as through the [Git](https://git-scm.com/) command "python -m http.server", and run the code through a local port, ideally via a private or incognito browser window or tab. 
-- The program's Mapbox functionality is provided by an API access token individually supplied to the author. The terms of use may change over time or the token's utility may expire, causing the program to no longer function as intended. **If this happens, it is recommended that the user obtain their own access token from [Mapbox](https://www.mapbox.com/about/maps/) and update the _config.js_ file.** _Please see the bottom of this README document for access to terms of use for the Mapbox API and its major associated functionality source._
-- The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 15 Leaflet Challenge](https://courses.bootcampspot.com/courses/3337/assignments/54007?module_item_id=961640) webpage.
-- The latest versions of the coding languages are [CSS3](https://en.wikipedia.org/wiki/CSS), [HTML5](https://en.wikipedia.org/wiki/HTML5), and [JavaScript ES13](https://en.wikipedia.org/wiki/JavaScript).
+  -  _Jupyter_Notebook_Files_ - Subfolder contains the _Original_ attempt file and three subsequent _Optimization_ files, in sequence, all with an .ipynb extension.
+  -  _H5_Files_ - Subfolder containing the same files, each with an .h5 extension.
+- Since h5 files have already been created, the last cell of each .ipnyb file should not be rerun.
+- The assignment details and starter code are proprietary and located on the [Rutgers University](https://www.rutgers.edu/) [(edX)](https://www.edx.org/) Bootcamp Spot [Module 21 Challenge](https://bootcampspot.instructure.com/courses/3337/assignments/54017?module_item_id=962033) webpage.
 - This project was created on a [PC](https://en.wikipedia.org/wiki/Personal_computer) using [Google Chrome](https://www.google.com/chrome/) for [Windows](https://www.microsoft.com/en-us/windows) version 115.0.5790.102 and its associated [Google DevTools](https://developer.chrome.com/docs/devtools/) extension. **If the program doesn't function, it is recommended that the user attempt running it on this platform and browser.**
 - Coding was guided by the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) ("don't repeat yourself") principle.
 
