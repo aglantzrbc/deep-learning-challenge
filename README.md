@@ -64,7 +64,23 @@ Yes, I was able to increase the accuracy of predictions on test data from 73.29%
 
 * What steps did you take in your attempts to increase model performance?
 
-After my original attempt, I tried to improve accuracy by correcting what I saw as imperfections in the original setup: eliminating an additional column (`ORGANIZATION`) that appeared superfluous to the calculation of `IS_SUCCESSFUL`, and capturing more data in additional bins. This was unsuccessful: accuracy dropped from 73.29% to 72.78%. I then decided to bring more computational power to bear on the problem by creating a third hidden layer with 20 neurons. This also didn't work, as accuracy fell to 72.45%. At that point, I interrogated the starter code and decided to keep the `NAME` variable in the analysis. This required binning name values, since I presume every name is unique. The change worked well and gave me the successful accuracy noted above.
+After my original attempt, I tried to improve accuracy by correcting what I saw as imperfections in the original setup: eliminating an additional column (`ORGANIZATION`) that appeared superfluous to the calculation of `IS_SUCCESSFUL`, and capturing more data in additional bins (**Figure 4** and **Figure 5**). This was unsuccessful: accuracy dropped from 73.29% to 72.78%. I then decided to bring more computational power to bear on the problem by creating a third hidden layer with 20 neurons. This also didn't work, as accuracy fell to 72.45%. At that point, I interrogated the starter code and decided to keep the `NAME` variable in the analysis. This required binning name values, since I presume every name is unique. The change worked well and gave me the successful accuracy noted above.
+
+![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/d8da2ea4-495f-4795-93bc-0388030a2701)
+
+**Figure 4** | _Code showing the dropping of additional field_ `ORGANIZATION` _in Optimization attempt 1_*
+
+![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/eaf6a8e6-a05f-4e35-9013-567eb316dea1)
+
+**Figure 5** | _Example of increase in binning in Optimization attempt 1_*
+
+I then decided to bring more computational power to bear on the problem by creating a third hidden layer with 20 neurons. This also didn't work, as accuracy fell to 72.45%.
+
+![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/321a5fcf-ff4d-4eda-bcb4-27c1f8264fe8)
+
+**Figure 6** | _Code showing the addition of another hidden layer in Optimization attempt 2_*
+
+At that point, I interrogated the starter code and decided to keep the `NAME` variable in the analysis. This required binning name values, since I presume every name is unique. The change worked well and gave me the successful accuracy noted above.
 
 **Summary:**
 
