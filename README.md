@@ -37,7 +37,7 @@ The target (i.e., [dependent](https://en.wikipedia.org/wiki/Dependent_and_indepe
 
 * What variable(s) are the feature(s) for your model?
 
-The features (i.e., independent variables) are all the remaining variables excluding 'EID' (i.e., Employee Identification Number), discuss immediately below.
+The features (i.e., independent variables) are all the remaining variables excluding `EID` (i.e., Employee Identification Number), discuss immediately below.
 
 * What variable(s) should be removed from the input data because they are neither targets nor features?
 
@@ -69,7 +69,7 @@ After my original attempt, I tried to improve accuracy by correcting what I saw 
 
 The successful increase in accuracy was only achieved after imprecise trial-and-error. There were four attempts, which involved dropping additional features, rebinning features, increasing the number of hidden layers, and finally retaining a feature that was previously dropped.
 
-The results are surprising. The addition of the `NAME` variable makes a significant difference in accuracy. I would have thought that the only features with a bearing on `IS_SUCCESSFUL` are related to past behavior, sectoral position, and financial performance, with `NAME` merely an incidental string. That this is not the case raises several questions. First, do more efficient and financially responsible organizations use particular keywords in their names? Second, is there an inherent bias in the model that privileges particular names strings over others?  Investigating these lines of inquiry would require different [unsupervised machine learning[(https://en.wikipedia.org/wiki/Unsupervised_learning) instrumentalities that are beyond the scope of this project.
+The results are surprising. The addition of the `NAME` variable makes a significant difference in accuracy. I would have thought that the only features with a bearing on `IS_SUCCESSFUL` are related to past behavior, sectoral position, and financial performance, with `NAME` merely an incidental string. That this is not the case raises several questions. First, do more efficient and financially responsible organizations use particular keywords in their names? Second, is there an inherent bias in the model that privileges particular names strings over others?  Investigating these lines of inquiry would require different [unsupervised machine learning](https://en.wikipedia.org/wiki/Unsupervised_learning) instrumentalities that are beyond the scope of this project.
 
 Overall, another way to approach this classification task would be to try a different type of model, such as a [Random Forest Classifier](https://en.wikipedia.org/wiki/Random_forest) or a [Support Vector Machine (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine). These models have been shown to be effective in binary classification problems and may be able to achieve a higher accuracy without the need for extensive optimization attempts. Additionally, they can handle both numerical and categorical variables and can handle outliers and imbalanced datasets well, which may be present in this dataset. Therefore, it may be worth exploring these alternative models as a potential solution to the classification problem. (Please see the _Acknowledgements_ section for the source of this paragraph.)
 
