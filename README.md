@@ -54,7 +54,17 @@ I was able to confine the model to two hidden layers and an output layer (See **
 
 * Were you able to achieve the target model performance?
 
-Yes, I was able to increase the accuracy of predictions on test data from 72.44% in my first attempt to 78.59% in my final (third) optimization. The final training result was 79.30%, only 0.71% higher than the final testing accuracy score, showing that overfitting was kept under control.
+Yes, I was able to increase the accuracy of predictions on test data from 72.44% in my first attempt to 78.59% in my final (third) optimization. The final training result was 79.30%, only 0.71% higher than the final testing accuracy score, showing that overfitting was kept under control. As aformentioned, the benchmark for success is 75%, so this model could be of use to Alphabet Soup.
+
+* What steps did you take in your attempts to increase model performance?
+
+After my original attempt, I tried to improve accuracy by correcting what I saw as imperfections in the original setup: eliminating an additional column (`ORGANIZATION`) that appeared superflous to the calculation of `IS_SUCCESSFUL`, and capturing more data in additional bins. This brought accuracy up modestly from 72.44% to 73.17%, which is still considered unsuccessful. I then decided to bring more computational power to bear on the problem by creating a third hidden layer with 20 neurons. This did not work: accuracy remained static since the last attempt, now at 73.07%. At that point, I interrogated the starter code and decided to keep the `NAME` variable in the analysis. This required binning name values, since I presume every name is unique. The change worked well and gave me the successful accuracy noted above.
+
+**Summary:**
+
+The successful increase in accuracy was only achieved after imprecise trial and error. There were four attempts, which involved dropping additional features, rebinning features, increasing the number of hidden layers, and finally retaining a feature that was previously dropped.
+
+The results are surprising. The addition of the `NAME` variable
 
 * The purpose of the [analysis](https://bootcampspot.instructure.com/courses/3337/assignments/54015?module_item_id=961978) was to build a model that can identify the creditworthiness of borrowers based on historical lending activity data for a [peer-to-peer lending](https://www.investopedia.com/terms/p/peer-to-peer-lending.asp#:~:text=Peer%2Dto%2Dpeer%20(P2P)%20lending%20is%20a%20form,terms%20and%20enables%20the%20transactions.) services company. [Supervised machine learning](https://en.wikipedia.org/wiki/Supervised_learning) techniques were used to accomplish this goal.
 * The financial data included these fields: `loan_size`, `interest_rate`,	`borrower_income`, `debt_to_income`,	`num_of_accounts`,	`derogatory_marks`, `total_debt`, and `loan_status`. It's assumed that the first seven datapoints are the basis for generating the `loan_score` value, which determines the overall disposition of the particular loan. For this analysis, the first seven fields were therefore collectively employed as an [independent variable](https://en.wikipedia.org/wiki/Dependent_and_independent_variables) to predict the eighth field, `loan_status`, the dependent variable.
