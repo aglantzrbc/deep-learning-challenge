@@ -48,7 +48,7 @@ Variables that were removed include `EID` and `NAME`, because these strings appe
 
 * How many [neurons](https://en.wikipedia.org/wiki/Artificial_neuron), [layers](https://en.wikipedia.org/wiki/Layer_(deep_learning)), and [activation functions](https://en.wikipedia.org/wiki/Activation_function) did you select for your neural network model, and why?
 
-I was able to confine the model to two hidden layers and an output layer (**Figure 2**). The hidden layers both used the [Rectified Linear Unit (ReLU)](https://builtin.com/machine-learning/relu-activation-function) activation function. Despite seeming simple, binary classification problems often involve complex, non-linear decision boundaries, perhaps like the subjective-sounding categories `USE_CASE` and `SPECIAL_CONSIDERATIONS`. ReLU introduces non-linearity to the model, enabling it to learn these non-linear relationships in the data. By contrast, my output layer used a [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) activation function, since its results are confined to values of 0 and 1, like the `IS_SUCCESSFUL` target variable. Finally, settling on the number of neurons was a trial-and-error process. I found that 80 neurons for the first hidden layer and 30 for the second worked well. The idea is that the earlier layers learn lower-level, more general features, while the later layers learn higher-level, more specific features. I therefore concentrated computational power with more neurons in the first layer, and then reduced the number in the second to capture the smaller number of high-level abstractions.
+I was able to confine the model to two hidden layers and an output layer (**Figure 2**). The hidden layers both used the [Rectified Linear Unit (ReLU)](https://builtin.com/machine-learning/relu-activation-function) activation function. Despite seeming simple, binary classification problems often involve complex, non-linear decision boundaries, perhaps like the subjective-sounding categories `USE_CASE` and `SPECIAL_CONSIDERATIONS`. ReLU introduces non-linearity to the model, enabling it to learn these non-linear relationships in the data. By contrast, my output layer used a [sigmoid](https://en.wikipedia.org/wiki/Sigmoid_function) activation function, since its results are confined to values of `0` and `1`, like the `IS_SUCCESSFUL` target variable. Finally, settling on the number of neurons was a trial-and-error process. I found that 80 neurons for the first hidden layer and 30 for the second worked well. The idea is that the earlier layers learn lower-level, more general features, while the later layers learn higher-level, more specific features. I therefore concentrated computational power with more neurons in the first layer, and then reduced the number in the second to capture the smaller number of high-level abstractions.
 
 ![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/1162a3b7-07f1-431d-b509-6f670f84da1b)
 
@@ -60,11 +60,11 @@ Yes, I was able to increase the accuracy of predictions on test data from 73.29%
 
 ![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/295d2cd4-b753-443f-9da9-dd5281d63fd9)
 
-**Figure 3** | *Accuracy scores for training and test data in last iteration of the model*
+**Figure 3** | *Accuracy scores for training and test data in the last iteration of the model*
 
 * What steps did you take in your attempts to increase model performance?
 
-After my original attempt, I tried to improve accuracy by correcting what I saw as imperfections in the original setup: eliminating an additional column (`ORGANIZATION`) that appeared superfluous to the calculation of `IS_SUCCESSFUL`, and capturing more data in additional bins (**Figure 4** and **Figure 5**). This was unsuccessful: accuracy dropped from 73.29% to 72.78%. I then decided to bring more computational power to bear on the problem by creating a third hidden layer with 20 neurons. This also didn't work, as accuracy fell to 72.45%. At that point, I interrogated the starter code and decided to keep the `NAME` variable in the analysis. This required binning name values, since I presume every name is unique. The change worked well and gave me the successful accuracy noted above.
+After my original attempt, I tried to improve accuracy by correcting what I saw as imperfections in the original setup: eliminating an additional column (`ORGANIZATION`) that appeared superfluous to the calculation of `IS_SUCCESSFUL`, and capturing more data in additional bins (**Figure 4** and **Figure 5**). This was unsuccessful: accuracy dropped from 73.29% to 72.78%.
 
 ![image](https://github.com/aglantzrbc/deep-learning-challenge/assets/127694342/d8da2ea4-495f-4795-93bc-0388030a2701)
 
@@ -80,7 +80,7 @@ I then decided to bring more computational power to bear on the problem by creat
 
 **Figure 6** | _Code showing the addition of another hidden layer in Optimization attempt 2_*
 
-At that point, I interrogated the starter code and decided to keep the `NAME` variable in the analysis. This required binning name values, since I presume every name is unique. The change worked well and gave me the successful accuracy noted above.
+At that point, I interrogated the starter code and decided to keep the `NAME` variable in the analysis. This required binning name values, since I presume every name is unique. The change worked well and gave me the acceptable accuracy noted above.
 
 **Summary:**
 
@@ -88,7 +88,7 @@ The successful increase in accuracy was only achieved after imprecise trial-and-
 
 The results are surprising. The addition of the `NAME` variable makes a significant difference in accuracy. I would have thought that the only features with a bearing on `IS_SUCCESSFUL` are related to past behavior, sectoral position, and financial performance, with `NAME` merely an incidental string. That this is not the case raises several questions. First, do more efficient and financially responsible organizations use particular keywords in their names? Second, is there an inherent bias in the model that privileges particular names strings over others?  Investigating these lines of inquiry would require different [unsupervised machine learning](https://en.wikipedia.org/wiki/Unsupervised_learning) instrumentalities that are beyond the scope of this project.
 
-Overall, another way to approach this classification task would be to try a different type of model, such as a [Random Forest Classifier](https://en.wikipedia.org/wiki/Random_forest) or a [Support Vector Machine (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine). These models have been shown to be effective in binary classification problems and may be able to achieve a higher accuracy without the need for extensive optimization attempts. Additionally, they can handle both numerical and categorical variables and can handle outliers and imbalanced datasets well, which may be present in this dataset. Therefore, it may be worth exploring these alternative models as a potential solution to the classification problem. (Please see the _Acknowledgements_ section for the source of this paragraph.)
+Overall, another way to approach this classification task would be to try a different type of model, such as a [Random Forest Classifier](https://en.wikipedia.org/wiki/Random_forest) or a [Support Vector Machine (SVM)](https://en.wikipedia.org/wiki/Support_vector_machine). These models have been shown to be effective in binary classification problems and may be able to achieve a higher accuracy without the need for extensive optimization attempts. Additionally, they can handle both numerical and categorical variables and can handle outliers and imbalanced datasets well, which may be present in this dataset. Therefore, it may be worth exploring these alternative models as a potential solution to the classification problem.
 
 ## 3. Installation:
 
