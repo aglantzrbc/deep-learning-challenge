@@ -38,7 +38,7 @@ The target (i.e., [dependent](https://en.wikipedia.org/wiki/Dependent_and_indepe
 
 * What variable(s) are the feature(s) for your model?
 
-The features (i.e., independent variables) are all the remaining variables excluding `EID` (i.e., Employee Identification Number), discuss immediately below.
+The features (i.e., independent variables) are all the remaining variables excluding `EID` (i.e., Employee Identification Number), discussed immediately below.
 
 * What variable(s) should be removed from the input data because they are neither targets nor features?
 
